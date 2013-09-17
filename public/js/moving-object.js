@@ -1,57 +1,54 @@
-SnakeGame.Game = (function () {
+var Asteroids = (function(Lib) {
+  Lib.MovingObject = (function() {
 
-  function Game(size) {
-    this.board = new SnakeGame.Board(size);
-    this.snake = this.board.snake;
-    this.over = false;
-    this.size = size;
-    this.placeFood();
-  }
-
-  Game.prototype.isEndingMove= function (pos) {
-    var isSnakePiece = false
-    var len = this.snake.length;
-    var snake = this.snake.body;
-    _.each(snake, function(sPos) {
-      if ( pos[0] === sPos[0] && pos[1] === sPos[1]) {
-        isSnakePiece = true;
+      function MovingObject(pos, velocity, radius) {
+        this.pos = pos;
+        this.velocity = velocity;
+        this.radius = radius;
       }
-    }); 
 
-    var isOffBoard = (pos[0] >= this.board.size || pos[0] < 0 || 
-                        pos[1] >= this.board.size || pos[1] < 0)
+      MovingObject.prototype.update = function(xDim, yDim) {
+        this.pos.x += this.velocity.x;
+        this.pos.y += this.velocity.y;
 
-    return isOffBoard || isSnakePiece;
-  }
+        this.pos.x = (this.pos.x + xDim) % xDim;
+        this.pos.y = (this.pos.y + yDim) % yDim;
+      };
 
-  Game.prototype.isFoodAhead = function () {
-    var food = this.currentFoodPos;
-    var nextPos = this.snake.lookAhead();
-    return (food[0] === nextPos[0] && food[1] === nextPos[1]);
-  }
+      MovingObject.prototype.isOffScreen = function(xDim, yDim) {
+        var isOffScreen = ((this.pos.x > xDim) || (this.pos.x < 0) ||
+          (this.pos.y > yDim) || (this.pos.y < 0));
 
-  Game.prototype.placeFood = function() {
-    var openSpaces = this.board.openSpaces(),
-        len = openSpaces.length,
-        randomIndex = Math.floor(Math.random() * len);
+        return isOffScreen;
+      };
 
-    this.currentFoodPos = openSpaces[randomIndex];
-  }
+      MovingObject.prototype.isHit = function (otherObjects) {
+        var len = otherObjects.length;
 
-  Game.prototype.render = function () {
-    return this.board.render();
-  }
+        for(var i = 0; i < len; i++) {
+          if(this.collidesWith(otherObjects[i])) {
+            return true;
+          }
+        }
 
-  Game.prototype.step = function () {
-    if (this.isFoodAhead()) {
-      this.snake.eat();
-      this.placeFood();
-    } else if (this.isEndingMove(this.snake.lookAhead())) {
-      this.over = true;
-    } else {
-      this.snake.move();
-    }
-  }
+        return false;
+      };
 
-  return Game;
-})();
+      MovingObject.prototype.collidesWith = function(otherObject) {
+        var distSqrd = Math.pow((this.pos.x - otherObject.pos.x), 2) +
+                       Math.pow((this.pos.y - otherObject.pos.y), 2);
+        var cartDist = Math.sqrt(distSqrd);
+
+        return cartDist < (this.radius + otherObject.radius);
+      };
+
+      MovingObject.prototype.calculateForwardDir = function() {
+      return { x : Math.cos(this.direction - (Math.PI / 2)),
+               y : Math.sin(this.direction - (Math.PI / 2)) };
+      };
+
+    return MovingObject;
+  })();
+
+  return Lib;
+})(Asteroids || { });
