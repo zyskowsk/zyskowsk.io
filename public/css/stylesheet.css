@@ -1,3 +1,37 @@
+/* Site Syling */
+
+
+.bored {
+  right: 15px;
+  position: absolute;
+  top: 15px;
+  background-color: white;
+  border: 1px black solid;
+  height: 35px;
+  width: 70px;
+}
+
+.bored:hover {
+   background-color:#e5e5e5;
+    border-color: red;
+    color: red;
+
+}
+
+h1 {
+  color: red;
+}
+
+.bored:active{
+    background-color:#fcfcfc;
+    border-color: red;
+    color: red;
+}
+
+.period {
+  color: black;
+}
+
 /* Snake Styling */
 
 .board {
@@ -55,36 +89,11 @@ h4 {
   text-align: center;
 }
 
-/* Site Syling */
+/* Asteroids Styling */
 
-
-.bored {
-  right: 15px;
-  position: absolute;
-  top: 15px;
-  background-color: white;
-  border: 1px black solid;
-  height: 35px;
-  width: 70px;
-}
-
-.bored:hover {
-   background-color:#e5e5e5;
-    border-color: red;
-    color: red;
-
-}
-
-h1 {
-  color: red;
-}
-
-.bored:active{
-    background-color:#fcfcfc;
-    border-color: red;
-    color: red;
-}
-
-.period {
-  color: black;
+.asteroids-container {
+  margin: 0px auto;
+  border: 3px red solid;
+  height: 400px;
+  width: 800px;
 }
