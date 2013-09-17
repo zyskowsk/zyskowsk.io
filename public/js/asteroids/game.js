@@ -60,6 +60,8 @@ var Asteroids = (function(Lib) {
       this.ctx.fillStyle = "white";
       this.ctx.font = "bold 80pt Arial ";
       this.ctx.fillText("GAME OVER.", 60, 210);
+      this.ctx.font = "bold 20pt Arial ";
+      this.ctx.fillText('press R to restart', 280, 310);
     };
     
     Game.prototype.removeAsteroid = function (idx) {

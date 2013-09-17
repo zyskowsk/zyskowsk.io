@@ -19,7 +19,7 @@
 }
 
 h1 {
-  color: red;
+  color: black;
 }
 
 .bored:active{
@@ -28,8 +28,17 @@ h1 {
     color: red;
 }
 
+
+.still-bored {
+  top: 60px;
+}
+
 .period {
-  color: black;
+  color: red;
+}
+
+.zyskowsk {
+  color: red;
 }
 
 /* Snake Styling */
@@ -96,4 +105,16 @@ h4 {
   border: 3px red solid;
   height: 400px;
   width: 800px;
+  text-align: center;
+  background-color: black;
 }
+
+.asteroids-container h1 {
+  color:white;
+  padding-top: 100px;
+}
+
+h3 {
+  text-align: center;
+}
+
