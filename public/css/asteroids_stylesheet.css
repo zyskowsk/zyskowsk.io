@@ -1,0 +1,18 @@
+.asteroids-container {
+  margin: 0px auto;
+  border: 3px red solid;
+  height: 400px;
+  width: 800px;
+  text-align: center;
+  background-color: black;
+}
+
+.asteroids-container h1 {
+  color:white;
+  padding-top: 100px;
+}
+
+h3 {
+  text-align: center;
+}
+
