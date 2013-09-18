@@ -243,63 +243,46 @@
 
 /* custom site css */
 
-.bored {
-  right: 15px;
-  position: absolute;
-  top: 15px;
-  background-color: white;
-  border: 1px black solid;
-  height: 35px;
-  width: 70px;
-}
 
-.bored:hover {
-   background-color:#e5e5e5;
-    border-color: red;
-    color: red;
-
-}
-
-h1 {
+.header h1 {
   color: black;
   font-family: PT Mono;
   font-weight: 400;
   font-size: 40px;
-  padding-left: 30px;
-}
-
-.bored:active{
-    background-color:#fcfcfc;
-    border-color: red;
-    color: red;
-}
-
-.still-bored {
-  top: 60px;
-}
-
-.period {
-  color: red;
+  padding-left: 70px;
 }
 
 .red {
   color: red;
 }
 
-.container {
-  width: 100%;
+
+.container.content {
+  background-color: #eeeeee;
+  padding: 5px;
 }
 
-.content {
-  height: 100%;
-  hidden: scroll;
-  background-color: #eeeeee;
+.projects {
+    margin-left: 200px;
+    margin-top: 90px;
+    background-color: #eeeeee;
+    width: inherit;
+}
+
+.header {
+    top: 0px;
+    position: fixed;
+    background-color: #eeeeee;
+    width: inherit;
+    margin-left: 200px;
+    opacity: 0.9;
 }
 
 .navbar {
   float: left;
   text-align: center;
-  margin-left: 300px;
+  height: 100%;
+  width: 100px;
 }
 
 .navbar ul {
@@ -315,6 +298,10 @@ h1 {
 
 .navbar a:hover {
   color: red;
+}
+
+.navigation {
+  position: fixed;
 }
 
 
