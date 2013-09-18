@@ -5,6 +5,8 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Mono|Kavoon' rel='stylesheet' type='text/css'>
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -28,37 +30,64 @@
           <h3> about me </h3>
           <img class="me-image" src="images/me.jpg">
            <p> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas adipiscing mauris at vestibulum malesuada. Sed eros elit, tincidunt id pulvinar ac, fermentum egestas enim. Nullam quis felis eget velit convallis pulvinar nec vel tortor. Morbi vel interdum massa. Pellentesque commodo magna vel diam tincidunt placerat. Ut sollicitudin, lacus pharetra aliquam venenatis, nibh turpis elementum sem, eget aliquam mi libero in massa. Curabitur facilisis placerat diam eu dignissim. Donec gravida mollis ante, id sagittis ipsum lacinia id. Nulla luctus, diam at dignissim ullamcorper, magna tortor hendrerit eros, et venenatis leo mi eu massa. Maecenas at aliquet lacus. Praesent vulputate nisi magna, nec tincidunt metus molestie nec. Duis tristique, velit eu lacinia scelerisque, tellus diam posuere sapien, non adipiscing nulla enim a massa. Etiam malesuada tortor sed nisi vehicula, quis sodales quam gravida. Donec ornare tortor imperdiet, ornare magna a, feugiat nisi. Praesent cursus tortor porta dictum interdum. Etiam leo quam, cursus ut porta in, semper et nunc. Integer eget est nec nisi feugiat pulvinar. Fusce venenatis tellus nec rutrum vestibulum. Nam rutrum luctus tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer tristique dictum risus a tempus. Mauris dapibus nisi vitae turpis fringilla, in imperdiet 
+            I am a mathematician turned web developer living in the bay area.  
+            Currenly, I work with Backbone.js and Ruby on Rails, but nothing 
+            excites me more than learning new technology.  I am interested in 
+            data analysis and visualization, education, food, and crowd sourcing
+            big ideas.  When I am not at my computer you can find me climbing or
+            hiking in the mountains.
           </p>
         </div>
         <div class="projects" id="projects">
           <h1> Projects </h1>
+            <p>
+              This is a selection of projects I have worked on over the past 
+              six months.  For code samples and more projects you can visit my
+              <a href="https://github.com/zyskowsk"> github </a>.
+            </p>
           
           <h3> Twenty Films </h3>
-          <img class="project-image" src="images/twentyfilms1.png">
+          <a href="http://www.twentyfilms.com/"><img class="project-image" src="images/twentyfilms1.png"></a>
           <p> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas adipiscing mauris at vestibulum malesuada. Sed eros elit, tincidunt id pulvinar ac, fermentum egestas enim. Nullam quis felis eget velit convallis pulvinar nec vel tortor. Morbi vel interdum massa. Pellentesque commodo magna vel diam tincidunt placerat. Ut sollicitudin, lacus pharetra aliquam venenatis, nibh turpis elementum sem, eget aliquam mi libero in massa. Curabitur facilisis placerat diam eu dignissim. Donec gravida mollis ante, id sagittis ipsum lacinia id. Nulla luctus, diam at dignissim ullamcorper, magna tortor hendrerit eros, et venenatis leo mi eu massa. Maecenas at aliquet lacus. Praesent vulputate nisi magna, nec tincidunt metus molestie nec. Duis tristique, velit eu lacinia scelerisque, tellus diam posuere sapien, non adipiscing nulla enim a massa. Etiam malesuada tortor sed nisi vehicula, quis sodales quam gravida. Donec ornare tortor imperdiet, ornare magna a, feugiat nisi. Praesent cursus tortor porta dictum interdum. Etiam leo quam, cursus ut porta in, semper et nunc. Integer eget est nec nisi feugiat pulvinar. Fusce venenatis tellus nec rutrum vestibulum. Nam rutrum luctus tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer tristique dictum risus a tempus. Mauris dapibus nisi vitae turpis fringilla, in imperdiet 
+            Twenty Films is a social web app where users share a list of their
+            twenty favorite films.  This is a single page app built with
+            Backbone.js on top of a Rails API.  For this project I focused on 
+            aggregating existing data.  I built an auto complete search mechanism
+            that gathers film data form multiple databases and complies the results.  Other
+            technology used includes Facbook integration, Redis cacheing, JQuery, 
+            and JQuery UI.  Twenty Films was deployed using Heroku and is live <a href="http://www.twentyfilms.com/">here</a>,
+            source code and demo account information can be found <a href="https://github.com/zyskowsk/TwentyFilms"> here </a>.
           </p>
 
           <h3> Snake </h3>
-          <img class="project-image" src="images/snake1.png">
+          <a href="/snake"><img class="project-image" src="images/snake1.png"></a>
           <p> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas adipiscing mauris at vestibulum malesuada. Sed eros elit, tincidunt id pulvinar ac, fermentum egestas enim. Nullam quis felis eget velit convallis pulvinar nec vel tortor. Morbi vel interdum massa. Pellentesque commodo magna vel diam tincidunt placerat. Ut sollicitudin, lacus pharetra aliquam venenatis, nibh turpis elementum sem, eget aliquam mi libero in massa. Curabitur facilisis placerat diam eu dignissim. Donec gravida mollis ante, id sagittis ipsum lacinia id. Nulla luctus, diam at dignissim ullamcorper, magna tortor hendrerit eros, et venenatis leo mi eu massa. Maecenas at aliquet lacus. Praesent vulputate nisi magna, nec tincidunt metus molestie nec. Duis tristique, velit eu lacinia scelerisque, tellus diam posuere sapien, non adipiscing nulla enim a massa. Etiam malesuada tortor sed nisi vehicula, quis sodales quam gravida. Donec ornare tortor imperdiet, ornare magna a, feugiat nisi. Praesent cursus tortor porta dictum interdum. Etiam leo quam, cursus ut porta in, semper et nunc. Integer eget est nec nisi feugiat pulvinar. Fusce venenatis tellus nec rutrum vestibulum. Nam rutrum luctus tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer tristique dictum risus a tempus. Mauris dapibus nisi vitae turpis fringilla, in imperdiet 
+            A simple implementation of the classic video game snake. Built using
+            object-oriented javascript and animated in the browser using JQuery
+            You can play it <a href="/snake"> here </a>, though it is quite addicting.
+            You have been warned.
           </p>
 
           <h3> Shared Houses </h3>
-          <img class="project-image" src="images/sharedhouses1.png">
+          <a href="http://www.sharedhous.es/"><img class="project-image" src="images/sharedhouses1.png"></a>
           <p> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas adipiscing mauris at vestibulum malesuada. Sed eros elit, tincidunt id pulvinar ac, fermentum egestas enim. Nullam quis felis eget velit convallis pulvinar nec vel tortor. Morbi vel interdum massa. Pellentesque commodo magna vel diam tincidunt placerat. Ut sollicitudin, lacus pharetra aliquam venenatis, nibh turpis elementum sem, eget aliquam mi libero in massa. Curabitur facilisis placerat diam eu dignissim. Donec gravida mollis ante, id sagittis ipsum lacinia id. Nulla luctus, diam at dignissim ullamcorper, magna tortor hendrerit eros, et venenatis leo mi eu massa. Maecenas at aliquet lacus. Praesent vulputate nisi magna, nec tincidunt metus molestie nec. Duis tristique, velit eu lacinia scelerisque, tellus diam posuere sapien, non adipiscing nulla enim a massa. Etiam malesuada tortor sed nisi vehicula, quis sodales quam gravida. Donec ornare tortor imperdiet, ornare magna a, feugiat nisi. Praesent cursus tortor porta dictum interdum. Etiam leo quam, cursus ut porta in, semper et nunc. Integer eget est nec nisi feugiat pulvinar. Fusce venenatis tellus nec rutrum vestibulum. Nam rutrum luctus tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer tristique dictum risus a tempus. Mauris dapibus nisi vitae turpis fringilla, in imperdiet 
+            Shared Houses is a web app I built for housemates who share expenses.
+            Users can add purchases and create monthly statementes that calculate
+            who owes who and how much.  I build this app using Ruby on Rails, Devise
+            for authentication and Bootstrap for styling. Shared Houses was deployed 
+            using Heroku and is live <a href="http://www.sharedhous.es/">here</a>, source code and demo 
+            account information can be found <a href="https://github.com/zyskowsk/shared-houses"> here </a>.
           </p>
             
       </div>
       <div class="connect">
-         <h3> connect </h3>
-         <a href="#"><img class="connect-img" src="images/twitter.png"></a>
-         <a href="#"><img class="connect-img" src="images/github.png"></a>
-         <a href="#"><img class="connect-img" src="images/instigram.png"></a>
-         <a href="#"><img class="connect-img" src="images/LinkedIn.png"></a>
+        <h1> connect </h1>
+        <div class="connect-links">
+          <a href="https://twitter.com/Zyskowsk"><img class="connect-img" src="images/twitter.png"></a>
+          <a href="https://github.com/zyskowsk"><img class="connect-img" src="images/github.png"></a>
+          <a href="http://instagram.com/zyskowsk"><img class="connect-img" src="images/instigram.png"></a>
+          <a href="http://www.linkedin.com/in/robzyskowski"><img class="connect-img" src="images/LinkedIn.png"></a>
+        </div>
       </div>
     </div>
   </body>
