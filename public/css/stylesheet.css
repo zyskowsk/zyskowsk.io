@@ -265,7 +265,8 @@ body {
   z-index: 3;
   width: 432px;
   margin: 0px auto;
-  padding-top: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .red {
