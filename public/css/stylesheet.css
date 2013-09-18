@@ -282,15 +282,14 @@ body {
   background-color: #eeeeee;
   width: inherit;
   box-sizing: border-box;
-  padding: 0 30px 100px 30px;
+  padding: 0 30px 30px 30px;
   z-index: 0;
 }
 
 .connect {
-  padding-top: 80px;
   background-color: #eeeeee;
   box-sizing: border-box;
-  padding: 100px 30px 0 30px;
+  padding: 10px 30px 0 30px;
   width: inherit;
   z-index: 0;
 }
