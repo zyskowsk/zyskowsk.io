@@ -243,6 +243,15 @@
 
 /* custom site css */
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Lato;
+  font-weight: 400;
+}
+
+p, a, li {
+  font-family: Lato;
+  font-weight: 300;
+}
 
 .header h1 {
   color: black;
@@ -250,12 +259,12 @@
   font-weight: 400;
   font-size: 40px;
   padding-left: 70px;
+  z-index: 3;
 }
 
 .red {
-  color: red;
+  color: #990000;
 }
-
 
 .container.content {
   background-color: #eeeeee;
@@ -263,32 +272,70 @@
 }
 
 .projects {
-    margin-left: 200px;
-    margin-top: 90px;
-    background-color: #eeeeee;
-    width: inherit;
+  padding-top: 100px;
+  background-color: #eeeeee;
+  width: inherit;
+  z-index: 0;
+  border-box
+}
+
+.connect {
+  background-color: #eeeeee;
+  width: inherit;
+  z-index: 0;
+}
+
+.connect h3 {
+    margin: 0;
+}
+
+.projects h1, p {
+  margin: 0;
+}
+
+.about-me{
+  padding-top: 100px;
+  background-color: #eeeeee;
+  width: inherit;
+  z-index: 0;
+}
+.about-me p {
+  margin: 0;
+}
+
+.about-me h3 {
+  position: absolute;
+  top: 300px;
+  padding: 15px;
+  color: #990000;
+  z-index: 1;
 }
 
 .header {
-    top: 0px;
-    position: fixed;
-    background-color: #eeeeee;
-    width: inherit;
-    margin-left: 200px;
-    opacity: 0.9;
+  top: 0px;
+  position: fixed;
+  background-color: #eeeeee;
+  width: inherit;
+  opacity: 0.95;
 }
 
 .navbar {
   float: left;
   text-align: center;
-  height: 100%;
-  width: 100px;
+  margin-left:100px;
 }
 
 .navbar ul {
   list-style-type: none;
 }
 
+.connect-img {
+    height:30px;
+    width: 30px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
 .navbar a {
   text-decoration: none;
   font-family: Lato;
@@ -297,13 +344,27 @@
 }
 
 .navbar a:hover {
-  color: red;
+  color: #990000;
 }
 
 .navigation {
   position: fixed;
 }
 
+.me-image {
+  width: 100%;
+}
+
+/* Projects */
+
+.project-image {
+    margin-left: 80px;
+    width: 70%;
+    border: 1px black solid;
+    box-shadow: 0px 0px 5px black;
+    left: 80px;
+    z-index: 0;
+}
 
 
 
