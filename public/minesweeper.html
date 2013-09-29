@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,100italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gravitas+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/minesweeper_stylesheet.css" />
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/minesweeper/ui.js"></script>
+    <script src="js/minesweeper/board.js"></script>
+    <script src="js/minesweeper/tile.js"></script>
+    <script src="js/minesweeper/utilities.js"></script>
+    <script src="js/minesweeper/app.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1> Minesweeper </h1>
+      <p> Flag: &#x21E7; + click </p>
+    </div>
+    <div class="nav"> 
+      <button id="small" class="small">Small</button>
+      <button id="medium" class="medium">Medium</button>
+      <button id="large" class="large">Large</button>
+      <button id="peek" class="peek-button">Peek</button>
+    </div>
+    <div id="board" oncontextmenu="return false;"></div>
+    <div id="message" class="message"></div>
+  </body>
+</html>

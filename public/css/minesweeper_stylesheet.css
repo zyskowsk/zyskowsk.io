@@ -1,0 +1,175 @@
+h1 {
+  font-family: Gravitas One;
+  font-weight: 400;
+  font-size: 50px;
+  margin: 0px;
+}
+
+#board {
+  width: 160px;
+  height: 160px;
+  border: 5px #479DB2 solid;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px lightgrey;
+  margin: 0px auto;
+  user-select: none;
+  background: lightgrey;
+  -webkit-user-select: none;  
+  -moz-user-select: none;
+}
+
+.header {
+  height: 100px;
+  width: 463px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.header p {
+  margin: 0px;
+  font-family: Lato;
+  font-weight: 300;
+}
+
+.nav {
+  width: 300px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.nav button {
+  margin-left: 10px;
+}
+
+.nav button {
+  background: #F7F7F7;
+  border: 1px #479DB2 dashed;
+  box-shadow:none;
+  height: 20px;
+  width: 60px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-family: Lato;
+  font-weight: 300 ;
+}
+
+.nav button:hover {
+  background-color: #EBEBEB;
+  color: #FC0037;
+}
+
+.peek-button {
+}
+
+.square { 
+  width: 18px;
+  height: 18px;
+  float: left;
+  border: 1px white solid;
+  cursor: pointer;
+}
+
+.square.flag {
+  background-color: #66E0FF;
+}
+.square.flag span {
+  position: relative;
+  right: 1px;
+  color: #FF0037;
+}
+
+.square.hidden {
+  background-color: #66E0FF;
+}
+
+.square.hidden:hover {
+  background-color: #FFA3A3;
+}
+
+.square.bomb {
+  background-color: #F2F2F2;
+}
+
+.square.number {
+  background-color: #F2F2F2;
+}
+
+.square.empty {
+  background-color: #F2F2F2;
+}
+
+.square.peek { 
+  background-color: #66E0FF;
+  cursor: default;
+}
+
+.square.peek span.bombChar {
+  color: white;
+  opacity: 0.3;
+}
+
+span {
+  font-family: Lato;
+  position: relative;
+  bottom: 1px;
+  left: 4px;
+}
+
+span.bombChar {
+  position: relative;
+  color: #479DB2;
+  right: 1px;
+}
+
+.one {
+  color: rgba(255, 0, 72, 0.3);
+}
+
+.two {
+  color: rgba(255, 0, 72, 0.4);
+}
+
+.three {
+  color: rgba(255, 0, 72, 0.5);
+}
+
+.four {
+  color: rgba(255, 0, 72, 0.6);
+}
+
+.five {
+  color: rgba(255, 0, 72, 0.7);
+}
+
+.six {
+  color: rgba(255, 0, 72, 0.8);
+}
+
+.seven {
+  color: rgba(255, 0, 72, 0.9);
+}
+
+.eight {
+  color: rgba(255, 0, 72, 0.95);
+}
+
+.message {
+  height: 30px;
+  width: 150px;
+  border: 1px #479DB2 dashed;
+  border-radius: 5px;
+  color: #FC0037;
+  margin: auto;
+  margin-top: 50px;
+  line-height: 27px;
+  text-align: center;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: rgba(214, 214, 214, 0.3);
+}
+
+
+
+
