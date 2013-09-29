@@ -1,4 +1,5 @@
 (function (root) {
+
   var Minesweeper = root.Minesweeper = (root.Minesweeper || {});
 
   var Utilities = Minesweeper.Utilities = {};
@@ -40,4 +41,5 @@
 
     return areEqual;
   }
+  
 })(this);

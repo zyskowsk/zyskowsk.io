@@ -5,17 +5,26 @@ h1 {
   margin: 0px;
 }
 
-#board {
+.board {
   width: 160px;
   height: 160px;
   border: 5px #479DB2 solid;
   border-radius: 5px;
   box-shadow: 2px 2px 2px lightgrey;
   margin: 0px auto;
-  user-select: none;
   background: lightgrey;
   -webkit-user-select: none;  
   -moz-user-select: none;
+  font-family: Lato;
+  font-weight: 300;
+}
+
+.board p {
+  width: 160px;
+  margin-top: 65px;
+  text-align: center;
+  cursor: default;
+  color: #FAFAFA;
 }
 
 .header {
@@ -23,7 +32,7 @@ h1 {
   width: 463px;
   margin: auto;
   text-align: center;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .header p {
@@ -35,14 +44,11 @@ h1 {
 .nav {
   width: 300px;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .nav button {
   margin-left: 10px;
-}
-
-.nav button {
   background: #F7F7F7;
   border: 1px #479DB2 dashed;
   box-shadow:none;
@@ -57,9 +63,6 @@ h1 {
 .nav button:hover {
   background-color: #EBEBEB;
   color: #FC0037;
-}
-
-.peek-button {
 }
 
 .square { 
@@ -106,7 +109,7 @@ h1 {
 
 .square.peek span.bombChar {
   color: white;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 span {
@@ -168,6 +171,7 @@ span.bombChar {
   font-size: 20px;
   font-weight: 300;
   background-color: rgba(214, 214, 214, 0.3);
+  display: none;
 }
 
 

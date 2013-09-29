@@ -13,8 +13,9 @@
   </head>
   <body>
     <div class="header">
-      <h1> Minesweeper </h1>
-      <p> Flag: &#x21E7; + click </p>
+      <h1>Minesweeper</h1>
+      <hr>
+      <p>Toggle Flag : &#x21E7; + click</p>
     </div>
     <div class="nav"> 
       <button id="small" class="small">Small</button>
@@ -22,7 +23,9 @@
       <button id="large" class="large">Large</button>
       <button id="peek" class="peek-button">Peek</button>
     </div>
-    <div id="board" oncontextmenu="return false;"></div>
+    <div id="board" class="board" oncontextmenu="return false;">
+      <p>Choose a board size.</p>
+    </div>
     <div id="message" class="message"></div>
   </body>
 </html>
