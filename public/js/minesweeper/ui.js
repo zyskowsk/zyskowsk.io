@@ -7,7 +7,7 @@
     this.size = this.board.size;
   }
 
-  UI.numbers = {
+  UI.NUMBERS = {
     1 : "one",
     2 : "two",
     3 : "three",
@@ -77,7 +77,7 @@
           "<div>"
           ].join(''));
       } else if ((!tile.hidden) && tile.bombCount > 0) {
-        var id = UI.numbers[tile.bombCount];
+        var id = UI.NUMBERS[tile.bombCount];
         $('#board').append([
           "<div class='square number " + id + "' id=" + tile.pos + ">",
             "<span>" + tile.bombCount +"</span>",
@@ -99,6 +99,10 @@
   UI.prototype._clickTile = function (event) {
     var pos = this._getPosFromEvent(event);
 
+    if (this.board.getTile(pos).flag) {
+      return;
+    }
+
     this.clearBoard();
     this.board.clickTile(pos);
     this.render();
@@ -116,7 +120,13 @@
   }
 
   UI.prototype._getPosFromEvent = function (event) {
-    return $(event.target).attr('id').split(",").map(function (int) { 
+    if (event.target.nodeName === 'DIV') {
+      var element = event.target;
+    } else {
+      var element = event.target.parentElement;
+    }
+
+    return $(element).attr('id').split(",").map(function (int) { 
       return parseInt(int); 
     });
   }
