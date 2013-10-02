@@ -105,18 +105,19 @@
 
     this.clearBoard();
     this.board.clickTile(pos);
-    this.render();
 
-    if (this.board.lost) {
+    if (this.board.lost && $('#message').is(":hidden")) {
       $('#message').append("Bummer!");
       $('#message').fadeIn('slow');
     }
 
-    if (this.board.swept()) {
+    if (this.board.swept() && $('#message').is(":hidden")) {
       this.board.revealAll();
       $('#message').append("Excellence!");
       $('#message').fadeIn('slow');
     }
+
+    this.render();
   }
 
   UI.prototype._getPosFromEvent = function (event) {
